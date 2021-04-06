@@ -1,3 +1,4 @@
-FROM python:3
+FROM pypy:3
 RUN pip install requests
-ENTRYPOINT [ "python" ]
+COPY ./access-token-service /access-token-service
+ENTRYPOINT [ "pypy3" ]
