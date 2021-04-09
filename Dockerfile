@@ -6,4 +6,4 @@ COPY ./access-token-service /access-token-service
 COPY ./cloud-operators /cloud-operators
 
 # ENTRYPOINT [ "pypy3" ]
-CMD [ "pypy3" ]
+CMD [ "pypy3", "/access-token-service/main.py" ]
